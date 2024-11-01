@@ -1,4 +1,4 @@
-FROM node:22.11.0-alpine as base
+FROM node:20.18.0-alpine AS base
 WORKDIR /app
 COPY . .
 RUN npm install && npm run build
